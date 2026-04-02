@@ -1,0 +1,7 @@
+compatibility_date = "2025-03-31"
+main = "src/index.ts"
+name = "zapper-redirects"
+
+[[routes]]
+  custom_domain = true
+  pattern = "sblr.to"

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./node_modules/@sablier/devkit/tsconfig/base.json",
+  "include": ["src"],
+  "compilerOptions": {
+    // Each file must be transpilable in isolation — required by esbuild (used by wrangler)
+    "isolatedModules": true,
+    // Override base's "NodeNext" — Workers use standard ES modules, not Node's resolution quirks
+    "module": "ESNext",
+    // Override base's "NodeNext" — "bundler" matches wrangler/esbuild resolution (bare specifiers, no file extensions required)
+    "moduleResolution": "bundler",
+    // Replace default DOM/Node types with Workers runtime globals (Request, Response, ExecutionContext, etc.)
+    "types": ["@cloudflare/workers-types"]
+  }
+}
