@@ -12,9 +12,9 @@
     "sablier": "^3.3.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.10",
+    "@biomejs/biome": "^2.5.0",
     "@cloudflare/workers-types": "^4.20260402.1",
-    "@sablier/devkit": "^1.15.3",
+    "@prb/devkit": "^1.0.4",
     "@typescript/native-preview": "^7.0.0-dev.20260401.1",
     "prettier": "^3.8.1",
     "typescript": "^5.9.3",
